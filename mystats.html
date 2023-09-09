@@ -45,5 +45,28 @@
                 <td>3</td>
             </tr>
         </table>
+        <hr>
+        <h3>Code Snippet</h3>
+        <q>How to round off numbers in SASS and adjusting the amount of decimals?</q>
+        <a href="https://stackoverflow.com/questions/10369643/rounding-numbers-in-sass-and-adjusting-the-amount-of-decimals" target="_blank">    Rounding off number</a>
+        <pre>
+            /// toFixed() function in Sass
+            /// @author Kitty Giraudel
+            /// @param {Number} $float - Number to format
+            /// @param {Number} $digits [2] - Number of digits to leave
+            /// @return {Number}
+            @function to-fixed($float, $digits: 2) {
+            $sass-precision: 5;
+            
+            @if $digits > $sass-precision {
+                @warn "Sass sets default precision to #{$sass-precision} digits, and there is no way to change that for now."
+                + "The returned number will have #{$sass-precision} digits, even if you asked for `#{$digits}`."
+                + "See https://github.com/sass/sass/issues/1122 for further informations.";
+            }
+            
+            $pow: pow(10, $digits);
+            @return round($float * $pow) / $pow;
+            }
+        </pre>
     </body>
 </html>
