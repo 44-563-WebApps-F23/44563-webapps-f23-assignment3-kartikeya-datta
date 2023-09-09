@@ -3,3 +3,10 @@
 Assignment 3 - Basic HTML
 <br>
 hosted at: https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment3-kartikeya-datta/
+<br>
+index: https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment3-kartikeya-datta/
+<br>
+Bonus: https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment3-kartikeya-datta/bonus.html
+<br>
+mystats: https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment3-kartikeya-datta/mystats.html
+
